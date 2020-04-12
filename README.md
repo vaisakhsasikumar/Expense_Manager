@@ -8,6 +8,8 @@
   "photolink": "",
   "phoneNumber": "9400000464"
 }
+
+
 returns
 {
     "auth": true,
@@ -26,6 +28,8 @@ returns
         "createdAt": "2020-04-12T13:35:04.040Z"
     }
 }
+
+
 2) POST http://localhost:3000/login/
 {
   "password": "P@ssw0rd",
@@ -40,8 +44,12 @@ return
 
 For all subsequent Requests we have to send token also with header x-access-token
 
+
+
 3) GET http://localhost:3000/users/vaisakh
 Send the token (x-access-token) in header. Only works if there is a token. Any User cannot see the information of other Users.
+
+
 
 [
     {
@@ -59,4 +67,6 @@ Send the token (x-access-token) in header. Only works if there is a token. Any U
         "updatedAt": "2020-04-12T13:20:56.000Z"
     }
 ]
+
+
 4) UPDATE and DELETE operations are also supported for Users.
